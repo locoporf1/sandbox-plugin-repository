@@ -4,6 +4,8 @@
   <version>1.0</version>
   <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
+  <resource-bundle>messages.MyBundle</resource-bundle>
+
   <description><![CDATA[
       Enter short description for your plugin here.<br>
       <em>most HTML tags may be used</em>
@@ -27,9 +29,9 @@
   </extensions>
 
   <actions>
-    <group id="MyIdeaDemo.HelloAction" text="MyIdeaDemo" description="about my idea">
-      <add-to-group group-id="MainMenu" anchor="last"/>
-      <action class="org.plugin.sandbox.HelloAction" id="MyIdeamDemo.Actions.HelloAction" text="Say Hello!!!"/>
+    <group id="MyActionGroup" class="org.plugin.sandbox.actions.MyActionGroup"
+      popup="true">
+      <add-to-group group-id="ToolsMenu" anchor="after" relative-to-action="MainMenu"/>
     </group>
   </actions>
 
