@@ -26,10 +26,12 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
+    <applicationService serviceImplementation="org.locoporf1.idea.sandbox.plugin.services.MyApplicationServiceImpl"
+      serviceInterface="org.locoporf1.idea.sandbox.plugin.services.MyApplicationService"/>
   </extensions>
 
   <actions>
-    <group id="MyActionGroup" class="org.plugin.sandbox.actions.MyActionGroup"
+    <group id="MyActionGroup" class="org.locoporf1.idea.sandbox.plugin.actions.MyActionGroup"
       popup="true">
       <add-to-group group-id="ToolsMenu" anchor="after" relative-to-action="MainMenu"/>
     </group>
