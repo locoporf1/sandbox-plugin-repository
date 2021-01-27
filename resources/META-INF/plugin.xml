@@ -1,19 +1,22 @@
 <idea-plugin>
-  <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <id>org.locoporf1.idea.sandbox.plugin</id>
+  <name>Sandboxes Assignation</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="locoporf1@gmail.com">locoporf1</vendor>
 
   <resource-bundle>messages.MyBundle</resource-bundle>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      IDEA Plugin for Sandbox assignation managment. Allow you easily to see the list of
+      Sandboxes, which of ones are being used or which ones are free in every moment.
+      If a Sandbox is free, you can book it or if you are using it, you can release it.
+      Just selecting it with a mouse click from the list of Sandboxes (Tools -> Sandboxes)
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+    <ul>
+      <li>1.0 - Basic Assignation and Release</li>
+    </ul>
     ]]>
   </change-notes>
 

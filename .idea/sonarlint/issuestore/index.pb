@@ -5,8 +5,6 @@ K
 sandbox-intellij-plugin.iml,8\a\8ad7e98252017d4dce3dde64fe2a5733656e4850
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
-M
-resources/META-INF/plugin.xml,9\1\916c178f3f2e3f9c290ddc27914107cdb9b953e9
 p
 @src/org/locoporf1/idea/sandbox/plugin/actions/MyActionGroup.java,0\5\05a0bcf3b6c46e07aa1612e66c5c45f70b9aa6b8
 h

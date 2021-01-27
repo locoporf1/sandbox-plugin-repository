@@ -25,7 +25,7 @@ public class SandboxAction extends AnAction {
         Sandbox requestedSandbox = optionalSandbox.get();
         Messages.showMessageDialog(
             "".equals(requestedSandbox.getOwner()) ?
-                "Sandbox is now free!" :
+                "Sandbox is now released!" :
                 "Sandbox assigned to you!",
             "Operation successful",
             Messages.getInformationIcon()
