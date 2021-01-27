@@ -34,6 +34,5 @@ public class SandboxAction extends AnAction {
     } catch (IOException e) {
       Messages.showMessageDialog(e.getMessage(), "Error requesting sandbox", Messages.getErrorIcon());
     }
-
   }
 }

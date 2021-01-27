@@ -17,11 +17,11 @@ import org.locoporf1.idea.sandbox.plugin.model.Sandbox;
 
 public class MyApplicationServiceImpl implements MyApplicationService {
 
-  private static final String SERVER_HOST = "localhost";//"sandboxserver-env.eba-tije36bi.us-east-1.elasticbeanstalk.com";
-  private static final Integer SERVER_PORT = 8080;
+  private static final String SERVER_HOST = "sandboxserver-env.eba-tije36bi.us-east-1.elasticbeanstalk.com";//"localhost";
+  private static final Integer SERVER_PORT = 80;//8080;
   private static final String SERVER_SCHEMA = "http";
-  private static final String SERVER_CONTEXT_PATH = "/sandbox-server";
-  private static final Pattern SANDBOX_NAME_PATTERN = Pattern.compile("\\w+\\s(\\d+)");
+  private static final String SERVER_CONTEXT_PATH = "";//"/sandbox-server";
+  private static final Pattern SANDBOX_NAME_PATTERN = Pattern.compile("\\w+\\s(\\d+).*");
   private final HttpClient httpClient;
   private final ObjectMapper objectMapper;
 
