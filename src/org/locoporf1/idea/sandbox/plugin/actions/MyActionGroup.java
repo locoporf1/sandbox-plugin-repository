@@ -21,19 +21,21 @@ public class MyActionGroup extends DefaultActionGroup {
   @NotNull
   @Override
   public AnAction[] getChildren(@Nullable AnActionEvent e) {
-    AnAction[] result = null;
-    try {
-      Optional<List<Sandbox>> sandboxes = MyApplicationService.getInstance().getList();
-      if (sandboxes.isPresent()) {
-        result = new AnAction[sandboxes.get().size()];
-        for (int i = 1; i <= sandboxes.get().size(); i++) {
-          result[i - 1] = createSandboxAction(e, i, sandboxes.get().get(i - 1));
+    AnAction[] result = new AnAction[0];
+    if (e != null) {
+      try {
+        Optional<List<Sandbox>> sandboxes = MyApplicationService.getInstance().getList();
+        if (sandboxes.isPresent()) {
+          result = new AnAction[sandboxes.get().size()];
+          for (int i = 1; i <= sandboxes.get().size(); i++) {
+            result[i - 1] = createSandboxAction(e, i, sandboxes.get().get(i - 1));
+          }
+        } else {
+          e.getPresentation().setEnabled(false);
         }
-      } else {
+      } catch (IOException ioException) {
         e.getPresentation().setEnabled(false);
       }
-    } catch (IOException ioException) {
-      e.getPresentation().setEnabled(false);
     }
     return result;
   }

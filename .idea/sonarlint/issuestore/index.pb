@@ -15,3 +15,5 @@ Hsrc/org/locoporf1/idea/sandbox/plugin/services/MyApplicationService.java,a\6\a
 Lsrc/org/locoporf1/idea/sandbox/plugin/services/MyApplicationServiceImpl.java,8\6\8617fd3261bc0c33c4a69231347f47ee29179d65
 p
 @src/org/locoporf1/idea/sandbox/plugin/actions/SandboxAction.java,1\d\1dac1c60ecfca4d4bdbe8957c4c5dbc90d75a221
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
